@@ -508,8 +508,7 @@ html {
 .hero__images {
   display: grid;
   grid-template-rows: auto;
-  align-items: flex-end;
-  grid-gap: 20px
+  align-items: flex-end
 }
 .hero__images-text {
   font-weight: 300;
@@ -538,16 +537,16 @@ html {
   grid-row: 1
 }
 .hero__images-item:nth-child(1) img {
-  max-width: 580px;
-  height: 17.5rem
+  max-width: 600px;
+  height: 18.75rem
 }
 .hero__images-item:nth-child(2) img {
-  max-width: 350px;
-  height: 11.875rem
+  max-width: 370px;
+  height: 12.5rem
 }
 .hero__images-item:nth-child(3) img {
   max-width: 200px;
-  height: 14.375rem
+  height: 15.625rem
 }
 .about__descr {
   max-width: 26.25rem;
@@ -1660,6 +1659,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__slogan-item {
     font-size: 1.5rem
   }
+  .hero__images {
+    gap: 1.25rem
+  }
   .hero__images-text {
     font-size: 1rem
   }
@@ -1900,18 +1902,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 1.25rem
   }
   .hero__slogan {
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem
+    -webkit-column-gap: 1.875rem;
+    -moz-column-gap: 1.875rem;
+    column-gap: 1.875rem
   }
   .hero__slogan-item {
     font-size: 1rem
+  }
+  .hero__images {
+    gap: .625rem
   }
   .hero__images-text {
     font-size: .875rem
   }
   .hero__images-text span {
-    font-size: 1.125rem
+    font-size: 1rem
   }
   .about {
     padding-top: 2.5rem
@@ -2077,6 +2082,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__slogan:not(:last-child) {
     margin-bottom: 2.5rem
   }
+  .hero__slogan-item::after {
+    top: 60%;
+    -webkit-transform: translateY(-60%);
+    transform: translateY(-60%);
+    width: .625rem;
+    height: .625rem
+  }
   .hero__images-item:nth-child(1) img {
     max-width: 100%
   }
@@ -2196,13 +2208,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     justify-content: center
   }
   .hero__images-item:nth-child(1) img {
-    height: 12.5rem
+    height: 15.625rem
   }
   .hero__images-item:nth-child(2) img {
-    height: 9.375rem
+    height: 11.25rem
   }
   .hero__images-item:nth-child(3) img {
-    height: 8.125rem
+    height: 12.5rem
   }
   .about__services {
     grid-template-columns: 1fr
@@ -2273,20 +2285,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__slogan-item {
     font-size: .875rem
   }
-  .hero__slogan-item::after {
-    width: .625rem;
-    height: .625rem;
-    right: -.9375rem;
-    top: .125rem
-  }
   .hero__images-item:nth-child(1) img {
-    height: 6.625rem
+    height: 9.375rem
   }
   .hero__images-item:nth-child(2) img {
-    height: 5.9375rem
+    height: 9.0625rem
   }
   .hero__images-item:nth-child(3) img {
-    height: 7.1875rem
+    height: 10.9375rem
   }
   .about__services-item {
     padding: 2.5rem
@@ -2398,18 +2404,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: clamp(1.25rem ,.8005617978rem + 2.2471910112vw ,2.5rem)
   }
   .hero__slogan {
-    -webkit-column-gap: clamp(1.25rem ,.3511235955rem + 4.4943820225vw ,3.75rem);
-    -moz-column-gap: clamp(1.25rem ,.3511235955rem + 4.4943820225vw ,3.75rem);
-    column-gap: clamp(1.25rem ,.3511235955rem + 4.4943820225vw ,3.75rem)
+    -webkit-column-gap: clamp(1.875rem ,1.2008426966rem + 3.3707865169vw ,3.75rem);
+    -moz-column-gap: clamp(1.875rem ,1.2008426966rem + 3.3707865169vw ,3.75rem);
+    column-gap: clamp(1.875rem ,1.2008426966rem + 3.3707865169vw ,3.75rem)
   }
   .hero__slogan-item {
     font-size: clamp(1rem ,.8202247191rem + .8988764045vw ,1.5rem)
+  }
+  .hero__images {
+    gap: clamp(.625rem ,.4002808989rem + 1.1235955056vw ,1.25rem)
   }
   .hero__images-text {
     font-size: clamp(.875rem ,.8300561798rem + .2247191011vw ,1rem)
   }
   .hero__images-text span {
-    font-size: clamp(1.125rem ,.9901685393rem + .6741573034vw ,1.5rem)
+    font-size: clamp(1rem ,.8202247191rem + .8988764045vw ,1.5rem)
   }
   .about {
     padding-top: clamp(2.5rem ,1.1516853933rem + 6.7415730337vw ,6.25rem)
