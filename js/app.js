@@ -2121,25 +2121,22 @@ PERFORMANCE OF THIS SOFTWARE.
         }));
         modules_flsModules.gallery = galleyItems;
     }
-    function animateCounter(counterElement) {
-        const updateCounter = () => {
-            const target = +counterElement.getAttribute("data-target");
-            const count = +counterElement.querySelector("span").innerText;
-            const increment = target / 100;
-            if (count < target) {
-                counterElement.querySelector("span").innerText = Math.ceil(count + increment);
-                setTimeout(updateCounter, 20);
-            } else counterElement.querySelector("span").innerText = target;
-        };
-        updateCounter();
+    const scrollUp = document.querySelector(".scroll-up");
+    const scrollToTopIcon = document.querySelector(".scroll-up-icon");
+    function toggleScrollUp() {
+        scrollUp.classList.toggle("active", window.scrollY > 1500);
     }
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+    window.addEventListener("scroll", toggleScrollUp);
+    scrollToTopIcon.addEventListener("click", scrollToTop);
     window["FLS"] = false;
     menuInit();
     tabs();
     showMore();
     headerScroll();
-    document.addEventListener("DOMContentLoaded", (function() {
-        const counters = document.querySelectorAll(".counter");
-        counters.forEach((counter => animateCounter(counter)));
-    }));
 })();

@@ -316,6 +316,94 @@ html {
   font-weight: 400;
   color: #cbac0a
 }
+.scroll-up {
+  position: fixed;
+  bottom: 1.875rem;
+  right: .625rem;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: opacity .3s,visibility .3s;
+  padding: .3125rem
+}
+.scroll-up.active {
+  opacity: 1;
+  visibility: visible
+}
+.scroll-up-icon {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  transition: -webkit-transform ease .3s;
+  transition: transform ease .3s;
+  transition: transform ease .3s,-webkit-transform ease .3s
+}
+.scroll-up-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.4375rem;
+  height: 3.4375rem;
+  background-color: #cbac0a;
+  border-radius: 100%;
+  transition: -webkit-transform ease .3s;
+  transition: transform ease .3s;
+  transition: transform ease .3s,-webkit-transform ease .3s
+}
+.scroll-up-chat:not(:last-child) {
+  margin-bottom: .625rem
+}
+.scroll-up-chat img {
+  width: 1.6875rem;
+  height: 1.6875rem;
+  -webkit-animation: ring 1s ease-in-out 0s infinite,pause 5s linear 1s infinite;
+  animation: ring 1s ease-in-out 0s infinite,pause 5s linear 1s infinite
+}
+@-webkit-keyframes ring {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+  25%,
+  75% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .5
+  }
+}
+@keyframes ring {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+  }
+  25%,
+  75% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .5
+  }
+}
+@-webkit-keyframes pause {
+  0%,
+  90% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
+@keyframes pause {
+  0%,
+  90% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+}
 .header {
   position: fixed;
   top: 0;
@@ -1808,7 +1896,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 2.5rem
   }
   .product__item {
-    font-size: 1.25rem
+    font-size: 1.125rem
   }
   .product__subtitle {
     font-size: 1.5rem
@@ -2058,7 +2146,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 1.875rem
   }
   .product__item {
-    font-size: 1rem
+    font-size: .875rem
   }
   .product__subtitle {
     font-size: 1.125rem
@@ -2123,6 +2211,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .color-wh {
     color: #ebeae3
+  }
+  .scroll-up {
+    bottom: 1.25rem;
+    right: .625rem
+  }
+  .scroll-up-icon {
+    width: 2.5rem;
+    height: 2.5rem
+  }
+  .scroll-up-chat {
+    width: 2.5rem;
+    height: 2.5rem
+  }
+  .scroll-up-chat img {
+    width: 1.25rem;
+    height: 1.25rem
   }
   .header__logo {
     max-width: 3.75rem;
@@ -2560,7 +2664,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: clamp(1.875rem ,1.6502808989rem + 1.1235955056vw ,2.5rem)
   }
   .product__item {
-    font-size: clamp(1rem ,.9101123596rem + .4494382022vw ,1.25rem)
+    font-size: clamp(.875rem ,.7851123596rem + .4494382022vw ,1.125rem)
   }
   .product__subtitle {
     font-size: clamp(1.125rem ,.9901685393rem + .6741573034vw ,1.5rem)
@@ -2605,6 +2709,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     color: #cbac0a;
     -webkit-transform: scale(.97);
     transform: scale(.97)
+  }
+  .scroll-up-icon:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+  }
+  .scroll-up-chat:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
   }
   .menu__link:hover {
     -webkit-transform: translateY(-5px);
