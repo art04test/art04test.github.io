@@ -323,6 +323,7 @@ html {
   right: .625rem;
   opacity: 0;
   visibility: hidden;
+  z-index: 10;
   cursor: pointer;
   transition: opacity .3s,visibility .3s;
   padding: .3125rem
@@ -916,8 +917,8 @@ html {
 .catalog__item-image {
   position: relative;
   margin: 0 auto;
-  max-width: 23.75rem;
-  height: 17.875rem
+  max-width: 22.5rem;
+  height: 16.25rem
 }
 .catalog__item-image:not(:last-child) {
   margin-bottom: .9375rem
@@ -2138,7 +2139,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: .875rem
   }
   .catalog__item-title {
-    font-size: 1.125rem
+    font-size: 1rem
   }
   .catalog__item-price {
     font-size: 1rem
@@ -2423,6 +2424,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: flex;
     flex-wrap: wrap
   }
+  .catalog__item-title:not(:last-child) {
+    margin-bottom: .9375rem
+  }
   .contacts__buttons-phone {
     padding: 1.25rem 2.5rem;
     max-width: 13.75rem;
@@ -2484,6 +2488,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .catalog__wrapper {
     grid-template-columns: repeat(auto-fill,minmax(18.75rem,1fr))
+  }
+  .catalog__item-image {
+    max-width: 15rem;
+    height: 10rem
   }
   .catalog__item-info {
     flex-direction: column;
@@ -2657,7 +2665,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: clamp(.875rem ,.8300561798rem + .2247191011vw ,1rem)
   }
   .catalog__item-title {
-    font-size: clamp(1.125rem ,1.0800561798rem + .2247191011vw ,1.25rem)
+    font-size: clamp(1rem ,.9101123596rem + .4494382022vw ,1.25rem)
   }
   .catalog__item-price {
     font-size: clamp(1rem ,.9550561798rem + .2247191011vw ,1.125rem)
