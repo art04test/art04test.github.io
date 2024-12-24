@@ -15,13 +15,13 @@
             }), 500);
             setTimeout((function() {
                 document.querySelector(".hero__text").classList.add("show");
-            }), 1e3);
+            }), 800);
             setTimeout((function() {
                 document.querySelector(".hero__image").classList.add("show");
-            }), 1500);
+            }), 1100);
             setTimeout((function() {
                 document.querySelector(".hero__buttons").classList.add("show");
-            }), 2e3);
+            }), 1e3);
         }), 1200);
     }
     function functions_getHash() {
