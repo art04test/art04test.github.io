@@ -2589,7 +2589,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-top: 3.125rem
   }
   .works {
-    padding-bottom: 3.125rem
+    padding-bottom: 5rem
   }
   .works__text {
     padding-top: 3.75rem
@@ -2999,7 +2999,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-top: 1.5625rem
   }
   .works {
-    padding-bottom: 1.5625rem
+    padding-bottom: 3.75rem
   }
   .works__text {
     padding-top: 2.5rem
@@ -3693,7 +3693,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-top: clamp(1.5625rem ,1.0625rem + 2.5vw ,3.125rem)
   }
   .works {
-    padding-bottom: clamp(1.5625rem ,1.0625rem + 2.5vw ,3.125rem)
+    padding-bottom: clamp(3.75rem ,3.35rem + 2vw ,5rem)
   }
   .works__text {
     padding-top: clamp(2.5rem ,2.1rem + 2vw ,3.75rem)
