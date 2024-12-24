@@ -994,7 +994,8 @@ html {
 }
 .about__founder-wrapper {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  gap: 1.25rem
 }
 .about__projects {
   display: flex;
@@ -2365,9 +2366,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .about__item-text {
     font-size: 1.25rem
   }
-  .about__founder-wrapper {
-    gap: 1.25rem
-  }
   .about__ceo-photo {
     max-width: 11.875rem
   }
@@ -2761,7 +2759,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: .875rem
   }
   .about__item:nth-child(2) {
-    margin-top: .625rem
+    margin-top: 1.25rem
   }
   .about__item:nth-child(2) {
     margin-left: 3.125rem
@@ -2777,9 +2775,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .about__item-text {
     font-size: 1rem
-  }
-  .about__founder-wrapper {
-    gap: .625rem
   }
   .about__ceo-photo {
     max-width: 8.75rem
@@ -3056,7 +3051,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__image::after {
     background: url(../img/hero/dec2.webp) center/cover no-repeat;
     bottom: auto;
-    top: 2.4375rem;
+    top: 3.125rem;
     right: -.0625rem;
     width: 12.0625rem;
     height: 6.75rem;
@@ -3064,12 +3059,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border-bottom-right-radius: 0
   }
   .year__image {
+    top: 3.125rem;
     bottom: auto;
     width: auto;
     right: .625rem;
     max-width: 9.6875rem;
     padding: .375rem .625rem;
-    top: 2.8125rem;
     border-radius: 1.25rem
   }
   .year__image-title {
@@ -3458,7 +3453,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: clamp(.875rem ,.795rem + .4vw ,1.125rem)
   }
   .about__item:nth-child(2) {
-    margin-top: clamp(-2.5rem ,1.625rem + -5vw ,.625rem)
+    margin-top: clamp(-2.5rem ,2.45rem + -6vw ,1.25rem)
   }
   .about__item:nth-child(2) {
     margin-left: clamp(3.125rem ,-2.875rem + 30vw ,21.875rem)
@@ -3474,9 +3469,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .about__item-text {
     font-size: clamp(1rem ,.92rem + .4vw ,1.25rem)
-  }
-  .about__founder-wrapper {
-    gap: clamp(.625rem ,.425rem + 1vw ,1.25rem)
   }
   .about__ceo-photo {
     max-width: clamp(8.75rem ,7.75rem + 5vw ,11.875rem)
@@ -3837,3 +3829,4 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     cursor: default
   }
 }
+@media (max-width: 29.9988em) {.about__ceo-photo{margin-right: 0;}}@media (max-width: 29.9988em) {.about__item:nth-child(2){margin-left: 0;}}@media (max-width: 61.9988em){.year__image-title {font-size: 1.125rem;}}@media (max-width: 61.9988em) {.title__dec::after {width: 1.25rem;height: 1.25rem;}}
